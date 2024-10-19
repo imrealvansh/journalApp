@@ -66,5 +66,4 @@ public class JournalEntryService {
         return removed;
     }
 
-
 }
