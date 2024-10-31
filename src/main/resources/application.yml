@@ -1,82 +1,38 @@
-weather:
-  api:
-    key: ${WEATHER.API_KEY}
-
 spring:
   redis:
-    host: ${REDIS_HOST}
-    port: 10609
-    password: ${REDIS_PASSWORD}
+    host: redis-12165.c301.ap-south-1-1.ec2.redns.redis-cloud.com
+    port: 12165
+    password: UikxXK1aDgjLmS2MtAwdzCAQcx8Eajjv
   data:
     mongodb:
-      uri: ${MONGODB_URI}
+      uri: mongodb+srv://imrealvansh:Vaish%405589@cluster0.7mjol.mongodb.net/
       database: journalApp
       auto-index-creation: true
-
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    username: ${JAVA_EMAIL}
-    password: ${JAVA_EMAIL_PASSWORD}
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
 
   main:
     allow-circular-references: true
 
 server:
-  port: ${SERVER_PORT}
+  port: 8081
   servlet:
     context-path: /journal
 
 
 
 
+weather:
+  api:
+    key: 537d01e675d0459fb961de1b7b0de71e
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#logging:
-#  level:
-#    net:
-#      vansh:
-#        journalApp: ERROR
-
-#logging:
-#  level:
-#    net:
-#      vansh:
-#        journalApp:
-#          service:
-#            UserService: OFF
-
-#logging:
-#  level:
-#    root: OFF
-
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: imrealvansh@gmail.com
+    password: hmpp obge cojg whrq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
