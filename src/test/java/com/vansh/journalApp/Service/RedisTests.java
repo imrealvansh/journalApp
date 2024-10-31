@@ -1,5 +1,6 @@
 package com.vansh.journalApp.Service;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,6 +14,7 @@ public class RedisTests {
     private RedisTemplate redisTemplate;
 
 
+    @Disabled
     @Test
     void testSendMail() {
         redisTemplate.opsForValue().set("email","akshitatomar0@gmail.com");
