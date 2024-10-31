@@ -1,11 +1,11 @@
 spring:
   redis:
-    host: redis-12165.c301.ap-south-1-1.ec2.redns.redis-cloud.com
+    host: ${REDIS_HOST}
     port: 12165
-    password: UikxXK1aDgjLmS2MtAwdzCAQcx8Eajjv
+    password: ${REDIS_PASS}
   data:
     mongodb:
-      uri: mongodb+srv://imrealvansh:Vaish%405589@cluster0.7mjol.mongodb.net/
+      uri: ${MONGODB_URI}
       database: journalApp
       auto-index-creation: true
 
@@ -13,7 +13,7 @@ spring:
     allow-circular-references: true
 
 server:
-  port: 8081
+  port: ${SERVER_PORT}
   servlet:
     context-path: /journal
 
@@ -22,14 +22,14 @@ server:
 
 weather:
   api:
-    key: 537d01e675d0459fb961de1b7b0de71e
+    key: ${WEATHER_API_KEY}
 
 
   mail:
     host: smtp.gmail.com
     port: 587
-    username: imrealvansh@gmail.com
-    password: hmpp obge cojg whrq
+    username: ${E_USERMNAME}
+    password: ${E_PASS}
     properties:
       mail:
         smtp:
