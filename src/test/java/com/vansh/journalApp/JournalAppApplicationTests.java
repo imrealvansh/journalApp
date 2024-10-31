@@ -10,5 +10,5 @@ class JournalAppApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
+	//happy
 }
